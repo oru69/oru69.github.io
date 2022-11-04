@@ -179,7 +179,7 @@ section {
     align-items: center;
     justify-content: center;
     top: 0;
-    right: -100%;
+    left: -100%;
     background-color: #1fbcff;
     width: 100vw;
     height: 100vh;
@@ -214,6 +214,6 @@ section {
   }
 
   .nav-menu.active {
-    right: 0;
+    left: 0;
   }
 }
