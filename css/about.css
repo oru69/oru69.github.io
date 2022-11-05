@@ -188,10 +188,39 @@ time {
   opacity: 1;
 }
 
+/* GALLERY SECTION */
+
+.gallery-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.gallery-img {
+  overflow: hidden;
+  border-radius: 2rem;
+}
+
+.gallery-box img {
+  width: 100%;
+  transition: all 400ms ease;
+}
+
+.gallery-box img:hover {
+  transform: scale(110%);
+}
+
 /* GENERAL MEDIA QUERIES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 @media screen and (max-width: 900px) {
+  /* GALLERY FOR TABLETS */
+  .gallery-box {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  /* Timeline for tablets */
   .timeline ul li div {
     width: 250px;
   }
@@ -213,6 +242,13 @@ time {
     width: 70%;
     justify-self: center;
   }
+
+  /* GALLERY FOR MOBILES */
+  .gallery-box {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* TIMELINE FOR MOBILES */
 
   .timeline ul li {
     margin-left: 20px;
