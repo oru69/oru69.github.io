@@ -5,54 +5,6 @@
   --font-size: 1.8rem;
 }
 
-header {
-  background: var(--primary-color);
-  width: 100%;
-  height: 100vh;
-  border-top-left-radius: 25rem;
-  border-bottom-right-radius: 20rem;
-  position: relative;
-}
-
-.hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  height: 100%;
-  gap: 2rem;
-  padding-top: 6rem;
-  overflow: hidden;
-}
-
-.hero .header-title p {
-  font-size: var(--font-size);
-  margin-top: 2rem;
-}
-
-.hero .header-image {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-}
-
-.header-image img {
-  width: 100%;
-  border-radius: 3rem;
-}
-
-.header-image img:first-child {
-  grid-column-start: span 2;
-}
-
-.down-arr {
-  font-size: 5rem;
-  position: absolute;
-  bottom: 0;
-  right: 2rem;
-  color: var(--secondary-color);
-  z-index: -1111;
-}
-
 /* Story */
 
 .story .heading-secondary {
@@ -176,10 +128,6 @@ header {
   opacity: 0.5;
 }
 
-.quote.off {
-  opacity: 0;
-}
-
 .message-text .text img {
   width: 10rem;
   height: 10rem;
@@ -204,47 +152,6 @@ header {
   width: 100%;
 }
 
-/* FOOTER SECTION */
-
-footer {
-  background: var(--primary-color);
-  width: 100%;
-  margin-top: 7.4rem;
-}
-
-.footer-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  text-align: center;
-  padding: 2.4rem;
-}
-
-.footer-container h3 {
-  font-size: 2.2rem;
-}
-
-.footer-container p {
-  font-size: 1.5rem;
-  margin-top: 2rem;
-}
-
-.footer-container span {
-  display: block;
-}
-
-.footer-container a:link,
-.footer-container a:visited {
-  font-size: 4rem;
-  color: #fff;
-  transition: all 400ms ease;
-}
-
-.footer-container a:active,
-.footer-container a:hover {
-  color: var(--alt-color);
-}
-
 /* MEDIA QUERY FOR TABLETS */
 
 @media screen and (max-width: 1024px) {
@@ -266,38 +173,6 @@ footer {
   /* NAV BAR FOR TABLETS */
 
   /* HEADER FOR TABLETS*/
-  .hero {
-    grid-template-columns: 1fr;
-    height: 100%;
-  }
-
-  header {
-    height: 100%;
-    padding-bottom: 3rem;
-  }
-  .header-title {
-    text-align: center;
-    margin-top: 4rem;
-  }
-
-  .header-image img {
-    width: 60%;
-    align-self: center;
-    justify-self: center;
-  }
-  .header-image img:nth-child(1) {
-    width: 60%;
-    align-self: center;
-    justify-self: center;
-  }
-
-  .header-image img:nth-child(2) {
-    justify-self: end;
-  }
-  .header-image img:nth-child(3) {
-    height: 100%;
-    justify-self: start;
-  }
 
   /* STORY FOR TABLETS */
 
