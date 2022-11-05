@@ -10,6 +10,8 @@ body {
   overflow-x: hidden;
 }
 
+/* ABOUT HEADER */
+
 .about {
   background: var(--primary-color);
   height: 40vh;
@@ -83,7 +85,7 @@ body {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
-  background: inherit;
+  background: var(--secondary-color);
   z-index: 1;
 }
 
@@ -148,44 +150,6 @@ body {
   right: -15px;
   border-width: 8px 0 8px 16px;
   border-color: transparent transparent transparent #2a2c37;
-}
-
-time {
-  display: block;
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 8px;
-}
-
-/* EFFECTS
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.timeline ul li::after {
-  transition: background 0.5s ease-in-out;
-}
-
-.timeline ul li.in-view::after {
-  background: var(--secondary-color);
-}
-
-.timeline ul li div {
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.5s ease-in-out;
-}
-
-.timeline ul li:nth-child(odd) div {
-  transform: translate3d(200px, 0, 0);
-}
-
-.timeline ul li:nth-child(even) div {
-  transform: translate3d(-200px, 0, 0);
-}
-
-.timeline ul li.in-view div {
-  transform: none;
-  visibility: visible;
-  opacity: 1;
 }
 
 /* GALLERY SECTION */
