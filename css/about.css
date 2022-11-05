@@ -202,6 +202,18 @@ time {
 }
 
 @media screen and (max-width: 600px) {
+  /* FOUNDATION FOR MOBILES */
+
+  .story-box {
+    grid-template-columns: 1fr;
+  }
+
+  .story-box .story-img {
+    grid-row: 1/2;
+    width: 70%;
+    justify-self: center;
+  }
+
   .timeline ul li {
     margin-left: 20px;
   }
